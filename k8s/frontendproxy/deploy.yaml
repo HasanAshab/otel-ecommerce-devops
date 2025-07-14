@@ -28,6 +28,7 @@ spec:
         app.kubernetes.io/component: frontendproxy
         app.kubernetes.io/name: opentelemetry-demo-frontendproxy
     spec:
+      serviceAccountName: opentelemetry-demo
       containers:
         - name: frontendproxy
           image: 'ghcr.io/open-telemetry/demo:1.12.0-frontendproxy'
